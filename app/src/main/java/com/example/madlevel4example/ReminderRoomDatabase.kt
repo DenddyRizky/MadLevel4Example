@@ -21,8 +21,7 @@ abstract class ReminderRoomDatabase : RoomDatabase(){
                     if (reminderRoomDatabaseInstance == null) {
                         reminderRoomDatabaseInstance = Room.databaseBuilder(
                             context.applicationContext, ReminderRoomDatabase::class.java,
-                            DATABASE_NAME).allowMainThreadQueries().build()
-
+                            DATABASE_NAME).build()
                     }
                 }
             }
