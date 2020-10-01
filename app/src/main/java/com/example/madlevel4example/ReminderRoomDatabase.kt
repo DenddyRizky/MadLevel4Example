@@ -26,6 +26,7 @@ abstract class ReminderRoomDatabase : RoomDatabase(){
                     }
                 }
             }
+            return reminderRoomDatabaseInstance
         }
     }
 }
